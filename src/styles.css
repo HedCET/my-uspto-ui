@@ -1,0 +1,37 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-variant-ligatures: none;
+  -webkit-text-size-adjust: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto", "Noto", sans-serif;
+  font-size: 100%;
+  font-variant-ligatures: none;
+  height: 100vh;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+.mat-snack-bar-container {
+  border-radius: 22px !important;
+  width: auto !important;
+}
+
+simple-snack-bar > span {
+  padding-left: 6px;
+}
+
+.mat-simple-snackbar-action * {
+  cursor: pointer;
+}
