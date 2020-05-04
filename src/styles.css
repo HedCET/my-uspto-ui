@@ -28,6 +28,11 @@ body {
   display: inline-block;
 }
 
+.mat-expansion-panel-header,
+.mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
 .mat-snack-bar-container {
   border-radius: 22px !important;
   width: auto !important;
