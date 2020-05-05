@@ -1,0 +1,248 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="column" fxLayoutAlign="center center" style="width: 384px;">
+    <div
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      style="min-height: 96px; padding: 24px; width: 100%;"
+    ></div>
+
+    <div
+      fxLayout="column"
+      fxLayoutAlign="end start"
+      style="min-height: 96px; padding: 24px; width: 100%;"
+    >
+      <div
+        class="mat-display-1"
+        style="font-weight: bold; letter-spacing: -1px; margin-bottom: 0;"
+      >
+        Store
+      </div>
+      <div class="mat-caption" style="color: #9e9e9e;">
+        Cached USPTO Data
+      </div>
+    </div>
+
+    <mat-accordion style="width: 100%;">
+      <mat-expansion-panel hideToggle style="width: 100%;">
+        <mat-expansion-panel-header>
+          <div
+            class="mat-body"
+            fxLayout="row"
+            fxLayoutAlign="space-between center"
+            style="cursor: pointer; padding: 0 24px; width: 100%;"
+          >
+            <div fxFlex="30" style="cursor: pointer;">A.1000.1</div>
+
+            <div
+              style="
+                color: #e0e0e0;
+                cursor: pointer;
+                overflow: hidden;
+                padding: 0 8px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+            >
+              2020-01-01 01:01:01 001
+            </div>
+
+            <img src="../assets/loading.svg" style="height: 24px;" />
+          </div>
+        </mat-expansion-panel-header>
+
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-between center"
+          style="min-height: 96px; padding-bottom: 16px; width: 100%;"
+        >
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center start"
+            style="padding: 0 24px; width: 100%;"
+          >
+            <div
+              class="mat-title"
+              style="
+                font-weight: bold;
+                letter-spacing: -0.5px;
+                margin-bottom: 0;
+              "
+            >
+              Queue
+            </div>
+            <div class="mat-caption" style="color: #9e9e9e;">
+              Token No 1
+            </div>
+          </div>
+
+          <div
+            fxLayout="row"
+            fxLayoutAlign="end center"
+            style="padding: 0 24px; width: 100%;"
+          >
+            <button mat-icon-button>
+              <mat-icon style="cursor: pointer;">clear</mat-icon>
+            </button>
+
+            <button mat-icon-button>
+              <mat-icon style="cursor: pointer;">refresh</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle (opened)="echarts()" style="width: 100%;">
+        <mat-expansion-panel-header>
+          <div
+            class="mat-body"
+            fxLayout="row"
+            fxLayoutAlign="space-between center"
+            style="cursor: pointer; padding: 0 24px; width: 100%;"
+          >
+            <div fxFlex="30" style="cursor: pointer;">P.10.1</div>
+
+            <div
+              style="
+                color: #e0e0e0;
+                cursor: pointer;
+                overflow: hidden;
+                padding: 0 8px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+            >
+              2020-01-01 01:01:01 001
+            </div>
+
+            <mat-icon style="color: #4caf50; cursor: pointer;">
+              check_circle
+            </mat-icon>
+          </div>
+        </mat-expansion-panel-header>
+
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-between center"
+          style="min-height: 96px; padding-bottom: 16px; width: 100%;"
+        >
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center start"
+            style="padding: 0 24px; width: 100%;"
+          >
+            <div
+              class="mat-title"
+              style="
+                font-weight: bold;
+                letter-spacing: -0.5px;
+                margin-bottom: 0;
+              "
+            >
+              Success
+            </div>
+            <div class="mat-caption" style="color: #9e9e9e;">
+              Patent Count 1000
+            </div>
+          </div>
+
+          <div
+            fxLayout="row"
+            fxLayoutAlign="center center"
+            id="echarts"
+            style="height: 256px; width: 100%;"
+          ></div>
+
+          <div
+            fxLayout="row"
+            fxLayoutAlign="end center"
+            style="padding: 0 24px; width: 100%;"
+          >
+            <button mat-icon-button>
+              <mat-icon style="cursor: pointer;">clear</mat-icon>
+            </button>
+
+            <button mat-icon-button>
+              <mat-icon style="cursor: pointer;">file_download</mat-icon>
+            </button>
+
+            <button mat-icon-button>
+              <mat-icon style="cursor: pointer;">refresh</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle style="width: 100%;">
+        <mat-expansion-panel-header>
+          <div
+            class="mat-body"
+            fxLayout="row"
+            fxLayoutAlign="space-between center"
+            style="cursor: pointer; padding: 0 24px; width: 100%;"
+          >
+            <div fxFlex="30" style="cursor: pointer;">A.1000.1</div>
+
+            <div
+              style="
+                color: #e0e0e0;
+                cursor: pointer;
+                overflow: hidden;
+                padding: 0 8px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+            >
+              2020-01-01 01:01:01 001
+            </div>
+
+            <mat-icon style="color: #f44336; cursor: pointer;">error</mat-icon>
+          </div>
+        </mat-expansion-panel-header>
+
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-between center"
+          style="min-height: 96px; padding-bottom: 16px; width: 100%;"
+        >
+          <div
+            fxLayout="column"
+            fxLayoutAlign="center start"
+            style="padding: 0 24px; width: 100%;"
+          >
+            <div
+              class="mat-title"
+              style="
+                font-weight: bold;
+                letter-spacing: -0.5px;
+                margin-bottom: 0;
+              "
+            >
+              Error
+            </div>
+            <div class="mat-caption" style="color: #9e9e9e;">Message</div>
+          </div>
+
+          <div
+            fxLayout="row"
+            fxLayoutAlign="end center"
+            style="padding: 0 24px; width: 100%;"
+          >
+            <button mat-icon-button>
+              <mat-icon style="cursor: pointer;">clear</mat-icon>
+            </button>
+
+            <button mat-icon-button>
+              <mat-icon style="cursor: pointer;">refresh</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <div
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      style="min-height: 96px; padding: 24px; width: 100%;"
+    ></div>
+  </div>
+</div>

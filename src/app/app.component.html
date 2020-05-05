@@ -18,7 +18,7 @@
         Store
       </div>
       <div class="mat-caption" style="color: #9e9e9e;">
-        USPTO Data Cache
+        Cached USPTO Data
       </div>
     </div>
 
@@ -31,11 +31,11 @@
             fxLayoutAlign="space-between center"
             style="cursor: pointer; padding: 0 24px; width: 100%;"
           >
-            <div fxFlex="30" style="cursor: pointer;">1000A/1</div>
+            <div fxFlex="30" style="cursor: pointer;">A.1000.1</div>
 
             <div
               style="
-                color: #9e9e9e;
+                color: #e0e0e0;
                 cursor: pointer;
                 overflow: hidden;
                 padding: 0 8px;
@@ -46,9 +46,7 @@
               2020-01-01 01:01:01 001
             </div>
 
-            <mat-icon style="color: #607d8b; cursor: pointer;">
-              swap_vertical_circle
-            </mat-icon>
+            <img src="../assets/loading.svg" style="height: 24px;" />
           </div>
         </mat-expansion-panel-header>
 
@@ -59,12 +57,16 @@
         >
           <div
             fxLayout="column"
-            fxLayoutAlign="end start"
+            fxLayoutAlign="center start"
             style="padding: 0 24px; width: 100%;"
           >
             <div
               class="mat-title"
-              style="font-weight: bold; letter-spacing: -1px; margin-bottom: 0;"
+              style="
+                font-weight: bold;
+                letter-spacing: -0.5px;
+                margin-bottom: 0;
+              "
             >
               Queue
             </div>
@@ -81,15 +83,11 @@
             <button mat-icon-button>
               <mat-icon style="cursor: pointer;">clear</mat-icon>
             </button>
-
-            <button mat-icon-button>
-              <mat-icon style="cursor: pointer;">refresh</mat-icon>
-            </button>
           </div>
         </div>
       </mat-expansion-panel>
 
-      <mat-expansion-panel hideToggle style="width: 100%;">
+      <mat-expansion-panel hideToggle (opened)="echarts()" style="width: 100%;">
         <mat-expansion-panel-header>
           <div
             class="mat-body"
@@ -97,13 +95,11 @@
             fxLayoutAlign="space-between center"
             style="cursor: pointer; padding: 0 24px; width: 100%;"
           >
-            <div fxFlex="30" style="cursor: pointer;">
-              10P/1
-            </div>
+            <div fxFlex="30" style="cursor: pointer;">P.10.1</div>
 
             <div
               style="
-                color: #9e9e9e;
+                color: #e0e0e0;
                 cursor: pointer;
                 overflow: hidden;
                 padding: 0 8px;
@@ -127,19 +123,30 @@
         >
           <div
             fxLayout="column"
-            fxLayoutAlign="end start"
+            fxLayoutAlign="center start"
             style="padding: 0 24px; width: 100%;"
           >
             <div
               class="mat-title"
-              style="font-weight: bold; letter-spacing: -1px; margin-bottom: 0;"
+              style="
+                font-weight: bold;
+                letter-spacing: -0.5px;
+                margin-bottom: 0;
+              "
             >
               Success
             </div>
             <div class="mat-caption" style="color: #9e9e9e;">
-              Patent Count 10
+              Patent Count 1000
             </div>
           </div>
+
+          <div
+            fxLayout="row"
+            fxLayoutAlign="center center"
+            id="echarts"
+            style="height: 256px; width: 100%;"
+          ></div>
 
           <div
             fxLayout="row"
@@ -169,13 +176,11 @@
             fxLayoutAlign="space-between center"
             style="cursor: pointer; padding: 0 24px; width: 100%;"
           >
-            <div fxFlex="30" style="cursor: pointer;">
-              1000A/1
-            </div>
+            <div fxFlex="30" style="cursor: pointer;">A.1000.1</div>
 
             <div
               style="
-                color: #9e9e9e;
+                color: #e0e0e0;
                 cursor: pointer;
                 overflow: hidden;
                 padding: 0 8px;
@@ -197,12 +202,16 @@
         >
           <div
             fxLayout="column"
-            fxLayoutAlign="end start"
+            fxLayoutAlign="center start"
             style="padding: 0 24px; width: 100%;"
           >
             <div
               class="mat-title"
-              style="font-weight: bold; letter-spacing: -1px; margin-bottom: 0;"
+              style="
+                font-weight: bold;
+                letter-spacing: -0.5px;
+                margin-bottom: 0;
+              "
             >
               Error
             </div>

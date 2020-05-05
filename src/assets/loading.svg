@@ -1,6 +1,9 @@
-<svg width="100%" height="100%" 
-  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-infinity">
-  <path fill="none" d="M24.3,30C11.4,30,5,43.3,5,50s6.4,20,19.3,20c19.3,0,32.1-40,51.4-40 C88.6,30,95,43.3,95,50s-6.4,20-19.3,20C56.4,70,43.6,30,24.3,30z" stroke="#000000" stroke-width="3" stroke-dasharray="128.29446411132812 128.29446411132812">
-    <animate attributeName="stroke-dashoffset" calcMode="linear" values="0;256.58892822265625" keyTimes="0;1" dur="1.5" begin="0s" repeatCount="indefinite"></animate>
-  </path>
+<svg height="256px" preserveAspectRatio="xMidYMid" style="background:transparent;display:block;margin:auto;" viewBox="0 0 100 100" width="256px" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- <circle cx="50" cy="50" fill="none" r="30" stroke="#ffffff" stroke-width="8"></circle> -->
+  <circle cx="50" cy="50" fill="none" r="30" stroke="#000000" stroke-linecap="round" stroke-width="8" transform="rotate(174.415 50 50)">
+    <animate attributeName="stroke-dasharray" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="18.84955592153876 169.64600329384882;94.2477796076938 94.24777960769377;18.84955592153876 169.64600329384882"></animate>
+    <animateTransform attributeName="transform" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" type="rotate" values="0 50 50;180 50 50;720 50 50"></animateTransform>
+  </circle>
 </svg>
