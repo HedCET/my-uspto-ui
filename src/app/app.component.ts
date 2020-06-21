@@ -9,7 +9,7 @@ import "echarts/lib/chart/pie";
   templateUrl: "./app.component.html",
 })
 export class AppComponent {
-  constructor(private readonly elementRef: ElementRef) {}
+  constructor(private readonly elementRef: ElementRef) { }
 
   echarts() {
     const document = this.elementRef.nativeElement;
@@ -44,7 +44,7 @@ export class AppComponent {
             smooth: true,
           },
           name: "Status",
-          radius: ["25%", "50%"],
+          radius: ["17.5%", "45%"],
           type: "pie",
         },
       ],
